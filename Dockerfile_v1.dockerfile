@@ -40,7 +40,7 @@ RUN echo "conda activate py310" >> ~/.bashrc
 # 以上为基础环境 cs_v1:base
 
 # 使用conda安装cuda环境，这里不能使用conda安装torch，conda默认安装torch+cpu
-RUN conda install cudatoolkit=11.3 -c pytorch
+RUN conda install cudatoolkit=11.3 -c pytorch -y
 
 # 启动命令
 CMD ["/bin/bash"]
