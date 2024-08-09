@@ -55,5 +55,8 @@ FROM cs_v1:0.04
 # # build构建时还是提示找不到合适的版本。只能进入容器内安装。
 # RUN pip install --no-index --no-cache-dir pytorch3d -f https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py310_cu113_pyt1121/download.html
 
+# 5.安装tensorflow-gpu==2.8.0
+RUN pip install tensorflow-gpu==2.8.0
+
 # 启动命令
 CMD ["/bin/bash"]
